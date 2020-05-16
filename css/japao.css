@@ -1,0 +1,242 @@
+body{
+    
+    width:960;
+    margin:0px 5px;
+    
+}
+
+*{          
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+nav{        /*MENU */
+    height: 60px;
+    background:  #595959;
+
+}
+nav img{        /*MENU LOGO*/
+    width: 65px;
+    position: absolute;
+    top: 12px;
+    left: 1%;
+}
+
+nav ul{         /*MENU */
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{      /*MENU */
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+
+}
+nav ul li a{        /*MENU */
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+nav ul li a ::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a :hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+    
+}    
+label #btn,
+label #cancel{
+    color: white;
+font-size: 30px;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 1118px) {
+     nav img{
+         left: 1%;
+     }
+}
+@media (max-width: 944px) {
+    nav img{
+        left: 1%;
+        top:20px;
+        width: 53px;
+    }
+    nav ul i a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 860px) {
+    label #btn{
+    display: block;    
+    }
+    ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #3f3e3e;
+     top:80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+
+    } 
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul i a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}
+
+
+#galeria{  /* PASSAGEM DAS IMAGENS*/
+    margin:0px auto;
+    height: 450px;
+    display:block;
+    
+}
+.foto:nth-child(1){
+
+}
+.foto:nth-child(2){
+    animation-delay:5s;
+}
+.foto:nth-child(3){
+    animation-delay:10s;
+}
+.foto:nth-child(4){
+    animation-delay:15s;
+}
+.foto{
+    padding:25px 190px;
+    position:absolute;
+    opacity: 0;
+    animation-name:animacao;
+    animation-duration:20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animacao{
+
+    25%{
+        opacity:1;
+        transform:scale(1.1,1.1);
+    }
+    50%{
+        opacity:0;
+        
+    }
+
+
+}
+
+#P{
+    display: inline-block;
+    width:210px;
+    font-size:30px;
+    font-style:italic;
+    position:relative;
+    padding:0px 15px;
+    color:red;
+    
+    
+
+}
+
+
+
+aside{          /* CAIXA ASIDE*/
+    height:520px;
+    width:385px;
+    float:right;
+    background:white;
+    border-radius:10px;
+}
+table{          /* TABELA DO ASIDE */
+    margin: 0px auto;
+}
+
+h1 {        /*EDICAO NOS TITULOS H1 */
+    color:#FE2E2E;
+    margin:0px;
+    font-size:55px;
+    font-family:Helvetica;
+    text-transform:uppercase;
+    text-align:center;
+    margin-left:500px;
+    
+}
+
+h2{         /*EDICAO NOS TITULOS H2*/
+    text-align:center;
+    color:red;
+
+}
+
+details{
+
+    width:500px;
+    margin-top:30px;
+    cursor:pointer;
+    background-color:lightcoral;
+    float:left;
+    border-radius:10px;
+
+}
+
+
+
+.caixa{
+    float:left;
+    margin:10px
+}
+
+summary{
+    background-color:red;
+    color:white;
+    font-size:24px;
+    letter-spacing:5px;
+    padding:15px;
+    border-radius:10px;
+}
+
+
+
+
+section{
+
+    height:650px;
+   
+}

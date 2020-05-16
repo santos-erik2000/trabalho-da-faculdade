@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Japao</title>
+        <link rel="stylesheet" href="main/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="../css/japao.css">
+        <script type="text/javascript" src="../js/conversor.js"></script>
+
+    </head>
+    
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+              <i class="fas fa-bars" id="btn"></i>
+              <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <img src="../assets/logo.png"><a>
+              <ul>
+              <li><a href="../html/menu.html">Página Inicial</a></li>
+              <li><a href="#">Turismo</a></li>
+              <li><a href="../html/contato.html">Contato</a></li>
+              <li><a href="#">Comentários</a></li>
+            </ul>
+          </nav>
+    
+
+        <header>
+            <h1>Japão</h1>
+
+            <p></p>
+            <div id="galeria">
+                <div id="P">
+                    <p>
+                    " Japão um país localizadas no leste da Ásia com sua população em torno de 127,4
+                    Milhões de pessoas, e ocupando uma área territorial de 372.000Km² "
+    
+                    </p>
+                </div>
+                <img class="foto"src="../assets/japao/1.jpg"> 
+                <img class="foto"src="../assets/japao/2.jpg"> 
+                <img class="foto" src="../assets/japao/3.jpg"> 
+                <img class="foto" src="../assets/japao/4.jpg"> 
+            </div>
+        </header>
+
+        <aside>
+            <h2>Planos de Viagem</h2>
+            <br />
+            <table width="300">
+                <tr>
+                    <td>
+                        <a href =
+                            "https://www.trivago.com/?aDateRange%5Barr%5D=2020-05-21&aDateRange%5Bdep%5D=2020-05-22&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=2759164%2F100&hasList=1&hasMap=0&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=16093&address=&addressGeoCode=&offset=0&ra=&overlayMode=">
+                            <img src="../assets/japao/trivago.jpg" />
+                        </a>
+                    </td>
+                    <td>
+                        <Strong style="color:rgb(12, 122, 12);font-size:24px">R$61,00/Dia</Strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href = 
+                            "https://www.cvc.com.br/monte-sua-viagem/resultados?ages=30%2C30&checkIn=2020-05-07&checkOut=2020-05-08T00%3A00%3A00-04%3A00&fromCityCode=35023&fromIATA=NGO&fromIATAName=Nagoya%20-%20Aichi%20%2C%20Jap%C3%A3o&guid=5ba1a271-a096-7581-6c2a-11041220a419&leaveDateRaw=2020-05-07T00%3A00%3A00-04%3A00&numberOfRooms=1&packageGroup=PACKAGE&pageNumber=1&returnDateRaw=2020-05-08T00%3A00%3A00-04%3A00&rooms=1&routes=NGO%2CNGO%2C2020-05-07%2BNGO%2CNGO%2C2020-05-08&toCityCode=35023&toIATA=NGO&toIATAName=Nagoya%20-%20Aichi%20%2C%20Jap%C3%A3o">
+                            <img src="../assets/japao/cvc.jpg" />
+                        </a>
+                    </td>
+                    <td>
+                        <Strong style="color:rgb(12, 122, 12);font-size:24px">R$2.000,00</Strong>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="https://www.hurb.com/br/hotels/toquio/viainn-akihabara-JNP-JP016639/07-05-2020/16-05-2020/1/2/0"><img src="../assets/japao/hub.jpg"></a>
+                    </td>
+                    <td>
+                        <Strong style="color:rgb(12, 122, 12);font-size:24px">R$374/ Dia</Strong>
+                    </td>
+                </tr>
+
+            </table>
+            <br />
+                <br />
+
+
+            <h2>Conversor de Moedas</h2>
+            <br />
+                <br />
+            <table border="1px"width="300">
+                <tr>
+                    <th>Reais</th>
+                    <th>yen</th>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>$19.25</td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="center">Digite em Reais</th>
+                </tr>
+                <tr>
+                    <td><input type="number" id="reais" placeholder="$1,00" value="1"/></td>
+                    <td><label id="lbResultado"></label></td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="center">
+                        <button id="btnConverter" onclick="convertValue(19.25)">Converter</button>
+                    </th>
+                </tr>
+            </table>
+        </aside>
+
+        <section>
+
+            <div class="caixa ">
+
+            <details>
+
+                <summary>Curiosidades</summary>
+
+                    <ul>
+                        <li>
+                                No Japão, é comum os restaurantes disporem as comidas do seu cardápio em mostruários na sua fachada ou dentro de vitrines 
+                        </li>
+
+                            <br>
+
+                        <li>
+                                Para cumprimentar alguém, abaixaram a cabeça como sinal de respeito e reverencia
+                        </li>
+
+                            <br>
+
+                        <li>
+                                Os japoneses têm o costume de tirar os sapatos antes de entrar em casa, para não trazer a impureza de fora para dentro de seus lares 
+                        </li>   
+
+                            <br>
+
+                        <li>
+                                Outro costume local é, enquanto comem fazem barulhos com a boca, isso é um sinal de que a comida está gostosa 
+                        </li>
+                    </ul>
+
+            </details>
+            </div>
+           
+            <div class="caixa">
+
+                <details>
+                
+                    <summary>Pontos Turísticos</summary>
+
+                        <ul>
+                            <li>
+                                Tokyo Tower (Tokyo)
+                            </li>
+                                <br />
+                            <li>
+                                Templo Nanzen (Quioto)
+                            </li>
+                                <br />
+                            <li>
+                                Castelo de Osaka
+                            </li>
+                                <br />
+                            <li>
+                                Edifício Umeda Sky Building (Osaka)
+                            </li>
+                                <br />
+                            <li>
+     
+                                Happen Garden (Tokyo)
+                     
+                            </li>
+                                <br />
+                            <li>
+     
+                                Monte Fuji (Ilha Honshu)
+                     
+                            </li>
+
+                        </ul>
+                   
+            </details>
+            </div>
+
+            <div class="caixa">
+                <details>
+                
+                    <summary>Culinária</summary>
+                    <ul>
+                        <li>
+                            Os japoneses consomem muitos peixes e frutos do mar. Sua culinária vai muito além do que geralmente encontramos nos restaurantes Brasileiros. Lá o Arroz (Gohan) é indispensável em todas as refeições bem como a sopa de pasta de soja 
+
+                        </li>
+                            <br />
+                        <li>
+                            Outro prato típico bastante popular no Japão é o de Macarrão (Soba ou Odon), servido em tigelas fundas cobertas com vegetais, peixes ou carne.  
+                        </li>
+
+                    </ul>
+                </details>
+            
+
+            </div>
+
+            <div class="caixa">
+
+                <details>
+                    <summary>Estações do Ano</summary>
+                    <ul>
+                        <li>
+                            Primavera 
+                        </li>
+                            <br />
+                        <li>
+                            Verão 
+                        </li>
+                            <br />
+                        <li>
+                            Inverno 
+                        </li>
+                            <br />
+                        <li>
+                            Outono  
+                        </li>
+                    </ul>
+                </details>
+
+            </div>
+        </section>
+
+        
+
+       
+
+
+    </body>
+
+</html>

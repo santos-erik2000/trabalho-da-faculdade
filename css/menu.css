@@ -1,0 +1,318 @@
+
+body{  
+                     /* PAGINA MENU */
+    width:1500px;
+    margin: auto;
+    background-image: url("../assets/Teste-fundo.jpg");
+    background-attachment: fixed;
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-color:black;
+    backface-visibility: initial;
+    
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+nav{        /*MENU */
+    height: 60px;
+    background:   #595959;
+
+}
+nav img{    /*MENU LOGO*/
+    width: 65px;
+    position: absolute;
+    top: 12px;
+    left: 1%;
+}
+
+nav ul{     /*MENU */
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{      /*MENU */
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+
+}
+nav ul li a{        /*MENU */
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+nav ul li a ::before{      
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover{
+    transform: scaleX(1);
+    transform-origin: left;
+    color:#D8D8D8
+    
+}    
+label #btn,
+label #cancel{
+    color: white;
+font-size: 30px;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 1118px) {
+     nav img{
+         left: 1%;
+     }
+}
+@media (max-width: 944px) {
+    nav img{
+        left: 1%;
+        top:20px;
+        width: 53px;
+    }
+    nav ul i a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 860px) {
+    label #btn{
+    display: block;    
+    }
+    ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #3f3e3e;
+     top:80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+
+    } 
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul i a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}
+
+#img{                    /* CAIXA DA IMAGEM */
+
+    height:470px;
+    width:auto;
+    margin:auto;
+    
+
+}
+#img1{                   /* IMAGEM*/
+    
+    height:440px;
+    width:auto;
+    border-radius:10px;
+    margin-left:170px;
+}
+
+
+aside{                   /* CAIXA DO LADO*/
+    
+    height:890px;
+    width:385px;
+    margin: 25px 10px 0px 0px;
+    float:right;
+    border-radius:10px;
+    background:white;
+    filter:brightness(50px);
+    
+}
+#cxText{                 /* CAIXA DE TEXTO DO LADO*/
+    
+    width:300px;
+    height:auto;
+    margin:auto;
+    font-family:arial;
+    text-align:center;
+}
+#cxText p{               /* PALAVRAS DO ASIDE*/
+
+    font-family:sans-serif;
+    text-align:justify;
+    
+}
+
+
+#cxCruzeiro{      /* CAIXA CRUZEIRO*/
+    width:auto;
+    height:350px;
+
+    
+}
+#cruzeiro{        /* IMAGEM CRUZEIRO  */
+    cursor:hand;
+    width:50px;
+    margin-bottom: 15px;
+
+}
+#Cruzeiro:hover{
+
+    zoom:101%;
+    cursor:hand;
+    
+
+}
+
+
+#cxFacebook{       /* CAIXA DO FACEBOOK*/
+    width:42px;
+    height:42px;
+    Margin-left:42px;
+    float:left
+}
+#cxWpp{             /* CAIXA DO WHATSZAPP*/
+    width:42px;
+    height:42px;
+    float:left;
+    margin-left:42px;
+
+}
+#cxInsta{            /* CAIXA DO INSTAGRAM*/
+    width:42px;
+    height:42px;
+    float:left;
+    margin-left:42px;
+}
+#cxTT{               /* CAIXA DO TWITTER*/
+
+    width:42px;
+    height:42px;
+    float:left;
+    margin-left:42px;
+}
+
+
+
+
+#Japao{             /*  CAIXA JAPAO */
+   
+    
+    height:435px;
+    width:500px; 
+    float:left;
+    margin: 35px 0px 5px 30px;
+    
+}   
+#imgJapao{          /* IMAGEM JAPAO */
+
+    height:460px;
+    width:500px;
+    border-radius:10px 10px 10px 10px;
+    padding:0px;
+    cursor:hand;
+}
+#imgJapao:hover{
+    
+    zoom:101%;
+}
+
+
+#Franca{             /* CAIXA FRANCA  */
+    
+    float:right;
+    height:435px;
+    width:500px;
+    margin: 35px 52px 5px 0px;
+}
+#imgFranca{          /* IMAGEM FRANCA */
+    
+    
+    height:460px;
+    width:500px;
+    border-radius:10px;
+    float:right;
+    padding:0;
+}
+#imgFranca:hover{
+    zoom:101%;
+}
+
+
+#Dubai{              /*  CAIXA DUBAI   */
+    
+    height:470px;
+    width:500px;;
+   
+    float:left;
+    margin: 30px 0px 0px 30px
+
+
+}
+#imgDubai{           /*  IMAGEM DUBAI   */
+    height:460px;
+    width:500px;
+    border-radius:10px;
+    padding:0;
+}
+#imgDubai:hover{
+
+    zoom:101%;
+}
+
+
+#Canada{             /*  CAIXA CANADA  */
+
+    
+    height:470px;
+    width:500px;
+   
+    float:right;
+    margin: 30px 52px 0px 0px;
+
+}
+#imgCanada{          /*  IMAGEM CANADA*/
+
+    height:460px;
+    width:500px;
+    border-radius:10px;
+    float:right;
+    padding:0;
+}
+#imgCanada:hover{
+    zoom:101%;
+}
+
+/* OUTRO CSS*/
+
+
